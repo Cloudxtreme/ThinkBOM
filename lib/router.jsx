@@ -1,5 +1,7 @@
 FlowRouter.route('/', {
   action() {
-    ReactLayout.render(MainLayout, {content: <App />});
+    ReactLayout.render(MainLayout, {
+      content: <App />
+    });
   }
 });

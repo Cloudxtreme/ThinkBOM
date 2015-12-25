@@ -1,39 +1,35 @@
 App = React.createClass({
   componentDidMount() {
-    $('.ui.form')
-      .form({
-        fields: {
-          firstName: {
-            identifier: 'first-name',
-            rules: [
-              {
-                type   : 'empty',
-                prompt : 'Please enter your name'
-              }
-            ]
-          },
-          
-          lastName: {
-            identifier: 'last-name',
-            rules: [
-              {
-                type   : 'empty',
-                prompt : 'Please select at least two skills'
-              }
-            ]
+      $('.ui.form')
+        .form({
+          fields: {
+            firstName: {
+              identifier: 'first-name',
+              rules: [{
+                type: 'empty',
+                prompt: 'Please enter your name'
+              }]
+            },
+
+            lastName: {
+              identifier: 'last-name',
+              rules: [{
+                type: 'empty',
+                prompt: 'Please select at least two skills'
+              }]
+            }
           }
-        }
-      });
-  },
-  
-  handleSubmit(event) {
-    event.preventDefault();
-  },
-  
-  
-  render() {
-    return (
-      <form className="ui form" onSubmit={this.handleSubmit}>
+        });
+    },
+
+    handleSubmit(event) {
+      event.preventDefault();
+    },
+
+
+    render() {
+      return (
+        <form className="ui form" onSubmit={this.handleSubmit}>
         <div className="field">
           <label>First Name</label>
           <input type="text" name="first-name" placeholder="First Name" />
@@ -44,6 +40,6 @@ App = React.createClass({
         </div>
         <button className="ui blue button" type="submit">Submit</button>
       </form>
-    )
-  }
+      )
+    }
 });

@@ -1,7 +1,7 @@
 MainLayout = React.createClass({
   render() {
     return (
-    <div>
+      <div>
       <header>
         <div className="ui four column grid container">
           <div className="row">
