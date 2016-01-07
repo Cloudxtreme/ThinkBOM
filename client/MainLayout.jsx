@@ -1,14 +1,10 @@
 MainLayout = React.createClass({
   render() {
-    let mainLayoutStyle = {
-      paddingTop: "40px"
-    };
-
     return (
       <div>
         <Navigation />
         <main>
-          <div style={mainLayoutStyle} className="container-fluid">
+          <div>
             {this.props.content}
           </div>
         </main>
