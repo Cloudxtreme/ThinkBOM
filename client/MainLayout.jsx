@@ -2,7 +2,9 @@ MainLayout = React.createClass({
   render() {
     return (
       <div>
-        <Navigation />
+        <header>
+          <Navigation />
+        </header>
         <main>
           <div>
             {this.props.content}
