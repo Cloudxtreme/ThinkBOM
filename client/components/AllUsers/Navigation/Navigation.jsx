@@ -14,17 +14,17 @@ Navigation = React.createClass({
           </div>
           <div className="collapse navbar-collapse" id="mobile-menu">
             <ul className="nav navbar-nav">
-              <li><a href="/">Home</a></li>
-              <li><a href="/BasicBOM">Manage BOM's</a></li>
+              <li><a data-toggle="collapse" data-target="#mobile-menu" href="/">Home</a></li>
+              <li><a data-toggle="collapse" data-target="#mobile-menu" href="/BasicBOM">Manage BOM's</a></li>
             </ul>
             <ul className="nav navbar-nav navbar-right">
               <li className="dropdown">
                 <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span className="caret"></span></a>
                 <ul className="dropdown-menu">
-                  <li><a href="/Login">Login</a></li>
-                  <li><a href="/Register">Register</a></li>
-                  <li><a href="/MyAccount">My Account</a></li>
-                  <li><a href="#">Logout</a></li>
+                  <li><a data-toggle="collapse" data-target="#mobile-menu" href="/Login">Login</a></li>
+                  <li><a data-toggle="collapse" data-target="#mobile-menu" href="/Register">Register</a></li>
+                  <li><a data-toggle="collapse" data-target="#mobile-menu" href="/MyAccount">My Account</a></li>
+                  <li><a data-toggle="collapse" data-target="#mobile-menu" href="#">Logout</a></li>
                 </ul>
               </li>
             </ul>
