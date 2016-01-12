@@ -1,4 +1,4 @@
-Materials = React.createClass({
+BusinessBOM = React.createClass({
   render() {
     return (
       <div>
