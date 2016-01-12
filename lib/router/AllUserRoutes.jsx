@@ -6,7 +6,7 @@ const MainBOMRoutes = FlowRouter.group({
 MainBOMRoutes.route('/', {
   action() {
     ReactLayout.render(MainLayout, {
-      content: <Home />
+      content: <HomeContainer />
     });
   }
 });

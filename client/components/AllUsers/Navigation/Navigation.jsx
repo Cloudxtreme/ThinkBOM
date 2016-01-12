@@ -1,7 +1,7 @@
 Navigation = React.createClass({
   render() {
     return (
-      <nav className="navbar navbar-default">
+      <nav className="navbar navbar-inverse">
         <div className="container-fluid">
           <div className="navbar-header">
             <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-menu" aria-expanded="false">
@@ -15,7 +15,7 @@ Navigation = React.createClass({
           <div className="collapse navbar-collapse" id="mobile-menu">
             <ul className="nav navbar-nav">
               <li><a href="/">Home</a></li>
-              <li><a href="/BasicBOM">BOM'S</a></li>
+              <li><a href="/BasicBOM">Manage BOM's</a></li>
             </ul>
             <ul className="nav navbar-nav navbar-right">
               <li className="dropdown">
