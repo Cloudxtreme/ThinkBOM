@@ -1,6 +1,23 @@
 Login = React.createClass({
   handleLogin(e) {
     e.preventDefault();
+    
+    let userData = {
+      username: this.refs.username.value,
+      password: this.refs.password.value,
+    };
+    
+    //Log user in with userrname and password
+    Meteor.loginWithPassword(userData.username, userData.password, (error) => {
+      //Invalid login
+      if (error) {
+        //Pop up an alert to show login failed
+        Bert.alert(error.reason, 'danger', 'growl-top-right');
+      } else {
+        FlowRouter.go("/");
+      }
+    });
+    
   },
   
   render() {
@@ -16,11 +33,11 @@ Login = React.createClass({
                 <form onSubmit={this.handleLogin}>
                   <div className="form-group">
                     <label htmlFor="username">Username</label>
-                    <input type="text" className="form-control" placeholder="Username" />
+                    <input type="text" ref="username" className="form-control" placeholder="Username" />
                   </div>
                   <div className="form-group">
                     <label htmlFor="password">Password</label>
-                    <input type="password" className="form-control" placeholder="Password" />
+                    <input type="password" ref="password" className="form-control" placeholder="Password" />
                   </div>
                   <button type="submit" className="btn btn-primary">Submit</button>
                 </form>

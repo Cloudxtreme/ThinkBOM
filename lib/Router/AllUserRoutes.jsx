@@ -27,10 +27,10 @@ MainBOMRoutes.route('/Login', {
   }
 });
 
-MainBOMRoutes.route('/Register', {
+MainBOMRoutes.route('/SignUp', {
   action() {
     ReactLayout.render(MainLayout, {
-      content: <Register />
+      content: <SignUp />
     });
   }
 });

@@ -2,7 +2,7 @@ MainLayout = React.createClass({
   render() {
     return (
       <div>
-        <Navigation/>
+        <NavigationContainer/>
         <main className="container-fluid">
           {this.props.content}
         </main>

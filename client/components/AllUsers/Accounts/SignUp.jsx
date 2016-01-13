@@ -1,4 +1,4 @@
-Register = React.createClass({
+SignUp = React.createClass({
   handleRegistration(e) {
     e.preventDefault();
     
