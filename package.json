@@ -1,0 +1,32 @@
+{
+  "name": "thinkbom",
+  "version": "1.0.0",
+  "description": "Bill of materials management system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mistaken3lf/ThinkBOM.git"
+  },
+  "keywords": [
+    "Bill",
+    "Of",
+    "Materials",
+    "ThinkBOM"
+  ],
+  "author": "Mistaken3lf, JKnipfer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mistaken3lf/ThinkBOM/issues"
+  },
+  "homepage": "https://github.com/Mistaken3lf/ThinkBOM#readme",
+  "dependencies": {
+    "material-ui": "^0.14.2",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6",
+    "react-mounter": "^1.0.0",
+    "react-tap-event-plugin": "^0.2.1"
+  }
+}
