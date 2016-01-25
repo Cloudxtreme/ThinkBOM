@@ -1,12 +1,8 @@
 import React from 'react';
 import {Navigation} from '../Navigation/Navigation.jsx';
 
-const fontStyle = {
-  fontFamily: "Roboto"
-}
-
 export const Layout = ({content}) => (
-  <div style={fontStyle}>
+  <div>
     <header>
       <Navigation />
     </header>
