@@ -5,7 +5,7 @@ import LeftNav from 'material-ui/lib/left-nav';
 import MenuItem from 'material-ui/lib/menus/menu-item';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
-const NavigationStyles = {
+const appBarStyle = {
   backgroundColor: Colors.red500,
   marginLeft: 200
 };
@@ -16,23 +16,20 @@ function home() {
   FlowRouter.go("/");
 }
 
-function test() {
-  FlowRouter.go("/test");
-}
-
-export const Navigation = () => (
+const Navigation = () => (
   <div>
     <AppBar
       title="ThinkBOM"
       showMenuIconButton={false}
-      style={NavigationStyles}
+      style={appBarStyle}
     />
      <LeftNav
       docked={true}
       width={200}
     >
       <MenuItem onTouchTap={home}>Home</MenuItem>
-      <MenuItem onTouchTap={test}>Test</MenuItem>
     </LeftNav>
   </div>
 );
+
+export default Navigation;
