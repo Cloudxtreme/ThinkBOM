@@ -6,14 +6,10 @@ const Layout = ({content}) => (
     <header>
       <Navigation />
     </header>
-    
+
     <main>
       {content}
     </main>
-    
-    <footer>
-      <p>Footer</p>
-    </footer>
   </div>
 );
 
