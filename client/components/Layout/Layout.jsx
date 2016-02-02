@@ -7,7 +7,7 @@ const Layout = ({content}) => (
       <Navigation />
     </header>
 
-    <main>
+    <main className="container-fluid">
       {content}
     </main>
   </div>
