@@ -1,3 +1,3 @@
 Meteor.publish('bomItems', () => {
-  return BOMItemsCollection.find();
+  return BOMItems.find();
 });

@@ -8,26 +8,22 @@ import TableBody from 'material-ui/lib/table/table-body';
 
 const BOMItem = ({bomItems}) => (
   <div>
-    <div className="row">
-      <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-        <Table>
-          <TableHeader>
-            <TableRow>
-              <TableHeaderColumn>BOM Item #</TableHeaderColumn>
-              <TableHeaderColumn>Description</TableHeaderColumn>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {bomItems.map(({bomItemNumber, bomDescription}) => (
-              <TableRow>
-                <TableRowColumn>{bomItemNumber}</TableRowColumn>
-                <TableRowColumn>{bomDescription}</TableRowColumn>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </div>
-    </div>
+    <Table>
+      <TableHeader>
+        <TableRow>
+          <TableHeaderColumn>BOM Item #</TableHeaderColumn>
+          <TableHeaderColumn>Description</TableHeaderColumn>
+        </TableRow>
+      </TableHeader>
+      <TableBody>
+        {bomItems.map(({_id, bomItemNumber, bomDescription}) => (
+          <TableRow key={_id}>
+            <TableRowColumn>{bomItemNumber}</TableRowColumn>
+            <TableRowColumn>{bomDescription}</TableRowColumn>
+          </TableRow>
+        ))}
+      </TableBody>
+    </Table>
   </div>
 );
 

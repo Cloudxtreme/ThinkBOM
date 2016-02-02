@@ -1,1 +1,0 @@
-global.BOMItemsCollection = new Mongo.Collection("bomItems");

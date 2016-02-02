@@ -40,7 +40,8 @@ export default class Navigation extends React.Component {
   render() {
     const styles = {
       appbarStyle: {
-        backgroundColor: Colors.red500
+        backgroundColor: Colors.red500,
+        marginBottom: 5
       }
     };
 
